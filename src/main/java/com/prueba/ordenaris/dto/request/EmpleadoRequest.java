@@ -11,7 +11,7 @@ public record EmpleadoRequest(Long id, @NotEmpty(message = "{notempty.field}") S
         @NotEmpty(message = "{notempty.field}") String apellidos,
         @NotEmpty(message = "{notempty.field}") String curp,
         Long puesto,
-        Long empleado,
+        Long idJefeInmediato,
         @Valid DireccionRequest direccion,
         List<EmpleadoRequest> subordinados) {
 

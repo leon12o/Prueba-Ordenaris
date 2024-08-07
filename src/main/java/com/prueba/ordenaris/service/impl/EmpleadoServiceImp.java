@@ -40,15 +40,15 @@ public class EmpleadoServiceImp implements EmpleadoService {
     }
 
     @Override
-    public EmpleadoRequest editarEmpleado(Long id, EmpleadoRequest empleado) {
+    public void editarEmpleado(Long id, EmpleadoRequest empleado) {
         Empleado empleadoActualizar = empleadoRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("No se encontro el empleado con id " + id));
         empleadoActualizar.setNombre(empleado.nombre());
         empleadoActualizar.setApellidos(empleado.apellidos());
-        empleadoActualizar.setPuesto(null);
-        empleadoActualizar.setJefeInmediato(empleadoActualizar);
+        empleadoActualizar.setPuesto(empleado.puesto() == null ? null : obtienePuesto(empleado.puesto()));
+        empleadoActualizar.setJefeInmediato(
+                empleado.idJefeInmediato() == null ? null : obtieneEmpleado(empleado.idJefeInmediato()));
         empleadoRepository.save(empleadoActualizar);
-        return null;
     }
 
     @Override
@@ -65,7 +65,9 @@ public class EmpleadoServiceImp implements EmpleadoService {
                 .nombre(empleado.getNombre())
                 .apellidos(empleado.getApellidos())
                 .curp(empleado.getCurp())
-                .puesto(null)
+                .puesto(empleado.getPuesto().getId())
+                .idJefeInmediato(
+                        empleado.getJefeInmediato() == null ? null : empleado.getJefeInmediato().getId())
                 // .empleado(empleado.getJefeInmediato() == null ? null
                 // : convierteToEmpleadoRequest(empleado.getJefeInmediato()))
                 .subordinados(new ArrayList<>())
@@ -93,7 +95,8 @@ public class EmpleadoServiceImp implements EmpleadoService {
                 .curp(empleadoRequest.curp())
                 .puesto(empleadoRequest.puesto() == null ? null : obtienePuesto(empleadoRequest.puesto()))
                 .jefeInmediato(
-                        empleadoRequest.empleado() == null ? null : obtieneEmpleado(empleadoRequest.empleado()))
+                        empleadoRequest.idJefeInmediato() == null ? null
+                                : obtieneEmpleado(empleadoRequest.idJefeInmediato()))
                 .direccion(convierteToDireccion(empleadoRequest.direccion()))
                 .build();
     }
