@@ -29,3 +29,8 @@ Las principales dependencias utilizadas en este proyecto son:
 
 
 La documentación de la API está disponible en /swagger-ui.html después de iniciar la aplicación.
+
+## Diagrama Entidad-Relación
+### A continuación se muestra el diagrama entidad-relación (ERD) del proyecto:
+
+![Diagrama](https://github.com/leon12o/Prueba-Ordenaris/blob/feature/src/main/resources/Diagrama%20Entidad%20Relacion.png)
