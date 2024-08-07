@@ -1,0 +1,287 @@
+[{
+    "id": 1,
+    "nombre": "Yolanda",
+    "apellidos": "X",
+    "curp": "PEPJ800101HDFNNN08",
+    "puesto": {
+        "id": 1,
+        "nombre": "CEO"
+    },
+    "jefeInmediato": null,
+    "direccion": {
+        "id": 1,
+        "calle": "Av. Siempre Viva",
+        "noExterior": "742",
+        "noInterior": "A",
+        "colonia": "Centro",
+        "municipio": "Ecatepec",
+        "estado": "Edomex",
+        "pais": "México"
+    }
+},
+{
+    "id": 2,
+    "nombre": "Daniel",
+    "apellidos": "X",
+    "curp": "PEPJ800101HDFNNN08",
+    "puesto": {
+        "id": 2,
+        "nombre": "MANAGER"
+    },
+    "jefeInmediato": {
+        "id": 1,
+        "nombre": "Yolanda",
+        "apellidos": "X",
+        "curp": "PEPJ800101HDFNNN08",
+        "puesto": {
+            "id": 1,
+            "nombre": "CEO"
+        },
+        "jefeInmediato": null,
+        "direccion": {
+            "id": 1,
+            "calle": "Av. Siempre Viva",
+            "noExterior": "742",
+            "noInterior": "A",
+            "colonia": "Centro",
+            "municipio": "Ecatepec",
+            "estado": "Edomex",
+            "pais": "México"
+        }
+    },
+    "direccion": {
+        "id": 2,
+        "calle": "Av. Siempre Viva",
+        "noExterior": "742",
+        "noInterior": "A",
+        "colonia": "Centro",
+        "municipio": "Ecatepec",
+        "estado": "Edomex",
+        "pais": "México"
+    }
+},
+{
+    "id": 3,
+    "nombre": "Rocio",
+    "apellidos": "X",
+    "curp": "PEPJ800101HDFNNN08",
+    "puesto": {
+        "id": 3,
+        "nombre": "OPERACIONES"
+    },
+    "jefeInmediato": {
+        "id": 2,
+        "nombre": "Daniel",
+        "apellidos": "X",
+        "curp": "PEPJ800101HDFNNN08",
+        "puesto": {
+            "id": 2,
+            "nombre": "MANAGER"
+        },
+        "jefeInmediato": {
+            "id": 1,
+            "nombre": "Yolanda",
+            "apellidos": "X",
+            "curp": "PEPJ800101HDFNNN08",
+            "puesto": {
+                "id": 1,
+                "nombre": "CEO"
+            },
+            "jefeInmediato": null,
+            "direccion": {
+                "id": 1,
+                "calle": "Av. Siempre Viva",
+                "noExterior": "742",
+                "noInterior": "A",
+                "colonia": "Centro",
+                "municipio": "Ecatepec",
+                "estado": "Edomex",
+                "pais": "México"
+            }
+        },
+        "direccion": {
+            "id": 2,
+            "calle": "Av. Siempre Viva",
+            "noExterior": "742",
+            "noInterior": "A",
+            "colonia": "Centro",
+            "municipio": "Ecatepec",
+            "estado": "Edomex",
+            "pais": "México"
+        }
+    },
+    "direccion": {
+        "id": 3,
+        "calle": "Av. Siempre Viva",
+        "noExterior": "742",
+        "noInterior": null,
+        "colonia": "Centro",
+        "municipio": "Ecatepec",
+        "estado": "Edomex",
+        "pais": "México"
+    }
+},
+{
+    "id": 4,
+    "nombre": "Claudia",
+    "apellidos": "X",
+    "curp": "PEPJ800101HDFNNN08",
+    "puesto": {
+        "id": 7,
+        "nombre": "EMPLOYEE"
+    },
+    "jefeInmediato": {
+        "id": 3,
+        "nombre": "Rocio",
+        "apellidos": "X",
+        "curp": "PEPJ800101HDFNNN08",
+        "puesto": {
+            "id": 3,
+            "nombre": "OPERACIONES"
+        },
+        "jefeInmediato": {
+            "id": 2,
+            "nombre": "Daniel",
+            "apellidos": "X",
+            "curp": "PEPJ800101HDFNNN08",
+            "puesto": {
+                "id": 2,
+                "nombre": "MANAGER"
+            },
+            "jefeInmediato": {
+                "id": 1,
+                "nombre": "Yolanda",
+                "apellidos": "X",
+                "curp": "PEPJ800101HDFNNN08",
+                "puesto": {
+                    "id": 1,
+                    "nombre": "CEO"
+                },
+                "jefeInmediato": null,
+                "direccion": {
+                    "id": 1,
+                    "calle": "Av. Siempre Viva",
+                    "noExterior": "742",
+                    "noInterior": "A",
+                    "colonia": "Centro",
+                    "municipio": "Ecatepec",
+                    "estado": "Edomex",
+                    "pais": "México"
+                }
+            },
+            "direccion": {
+                "id": 2,
+                "calle": "Av. Siempre Viva",
+                "noExterior": "742",
+                "noInterior": "A",
+                "colonia": "Centro",
+                "municipio": "Ecatepec",
+                "estado": "Edomex",
+                "pais": "México"
+            }
+        },
+        "direccion": {
+            "id": 3,
+            "calle": "Av. Siempre Viva",
+            "noExterior": "742",
+            "noInterior": null,
+            "colonia": "Centro",
+            "municipio": "Ecatepec",
+            "estado": "Edomex",
+            "pais": "México"
+        }
+    },
+    "direccion": {
+        "id": 4,
+        "calle": "Av. Siempre Viva",
+        "noExterior": "742",
+        "noInterior": null,
+        "colonia": "Centro",
+        "municipio": "Ecatepec",
+        "estado": "Edomex",
+        "pais": "México"
+    }
+},
+{
+    "id": 5,
+    "nombre": "Hector",
+    "apellidos": "X",
+    "curp": "PEPJ800101HDFNNN08",
+    "puesto": {
+        "id": 7,
+        "nombre": "EMPLOYEE"
+    },
+    "jefeInmediato": {
+        "id": 3,
+        "nombre": "Rocio",
+        "apellidos": "X",
+        "curp": "PEPJ800101HDFNNN08",
+        "puesto": {
+            "id": 3,
+            "nombre": "OPERACIONES"
+        },
+        "jefeInmediato": {
+            "id": 2,
+            "nombre": "Daniel",
+            "apellidos": "X",
+            "curp": "PEPJ800101HDFNNN08",
+            "puesto": {
+                "id": 2,
+                "nombre": "MANAGER"
+            },
+            "jefeInmediato": {
+                "id": 1,
+                "nombre": "Yolanda",
+                "apellidos": "X",
+                "curp": "PEPJ800101HDFNNN08",
+                "puesto": {
+                    "id": 1,
+                    "nombre": "CEO"
+                },
+                "jefeInmediato": null,
+                "direccion": {
+                    "id": 1,
+                    "calle": "Av. Siempre Viva",
+                    "noExterior": "742",
+                    "noInterior": "A",
+                    "colonia": "Centro",
+                    "municipio": "Ecatepec",
+                    "estado": "Edomex",
+                    "pais": "México"
+                }
+            },
+            "direccion": {
+                "id": 2,
+                "calle": "Av. Siempre Viva",
+                "noExterior": "742",
+                "noInterior": "A",
+                "colonia": "Centro",
+                "municipio": "Ecatepec",
+                "estado": "Edomex",
+                "pais": "México"
+            }
+        },
+        "direccion": {
+            "id": 3,
+            "calle": "Av. Siempre Viva",
+            "noExterior": "742",
+            "noInterior": null,
+            "colonia": "Centro",
+            "municipio": "Ecatepec",
+            "estado": "Edomex",
+            "pais": "México"
+        }
+    },
+    "direccion": {
+        "id": 5,
+        "calle": "Av. Siempre Viva",
+        "noExterior": "742",
+        "noInterior": "A",
+        "colonia": "Centro",
+        "municipio": "Ecatepec",
+        "estado": "Edomex",
+        "pais": "México"
+    }
+}
+
+]
